@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago Pendiente - Dra. Furlan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="status-container">
+        <div class="status-card pending">
+            <div class="status-icon">
+                <i class="fas fa-clock"></i>
+            </div>
+            <h2>Pago En Proceso</h2>
+            <p class="status-msg">Estamos esperando la confirmación de la pasarela de pago (Ej. Rapipago / Pago Fácil / Transferencia).</p>
+            
+            <div class="status-details">
+                <p>Una vez que el pago sea acreditado, procesaremos tu reserva automáticamente y te avisaremos por WhatsApp.</p>
+            </div>
+
+            <a href="/" class="btn-status">Volver al Inicio</a>
+        </div>
+    </div>
+</body>
+</html>

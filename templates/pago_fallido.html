@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago No Completado - Dra. Furlan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="status-container">
+        <div class="status-card error">
+            <div class="status-icon">
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <h2>No se pudo procesar el pago</h2>
+            <p class="status-msg">La transacción fue rechazada o cancelada por la entidad financiera.</p>
+            
+            <div class="status-details">
+                <p>No te preocupes, no se ha realizado ningún cargo a tu cuenta. Podés intentar nuevamente con otro medio de pago.</p>
+            </div>
+
+            <a href="/#booking-section" class="btn-status">Reintentar Pago</a>
+        </div>
+    </div>
+</body>
+</html>

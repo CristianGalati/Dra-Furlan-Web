@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Furlan - Clínica Médica, Tiroides y Diabetes</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+
+</head>
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Dra. Furlan</h1>
+                    <span>Medicina Integral</span>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#alerta-tiroides">Aviso Pacientes</a></li>
+                    <li><a href="#reserva" class="btn-reserve"><i class="fa-regular fa-calendar-check"></i> Reservar Turno</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div>
+            <div class="hero-badge">
+                <i class="fa-solid fa-stethoscope"></i> Atención Médica Online y Presencial
+            </div>
+            <h2>Especialista en Clínica Médica, Tiroides y Diabetes</h2>
+            <p>Atención integral orientada a la prevención, diagnóstico y tratamiento personalizado de afecciones endócrinas y metabólicas. Cuidamos tu salud de manera profesional y humana.</p>
+            <div class="hero-buttons">
+                <a href="#reserva" class="btn-reserve" style="font-size: 1.05rem; padding: 0.8rem 1.8rem;">
+                    <i class="fa-regular fa-calendar-plus"></i> Agendar Videoconsulta
+                </a>
+            </div>
+        </div>
+        <div class="hero-img-container">
+            <!-- Imagen editable: Reemplazar src con la foto real de la Dra. Furlan -->
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Dra. Furlan Medica" class="hero-img" id="doctor-portrait">
+            
+            <div class="experience-card">
+                <i class="fa-solid fa-award"></i>
+                <div>
+                    <h5 style="margin: 0; font-weight: 700;">Atención Profesional</h5>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--gray);">Seguimiento continuo de pacientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALERTA PACIENTES TIROIDEOS -->
+    <section class="alert-section" id="alerta-tiroides">
+        <div class="alert-box">
+            <div class="alert-icon">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="alert-content">
+                <h3><i class="fa-solid fa-heart-pulse"></i> Control Importante: Hipotiroidismo e Hipertiroidismo</h3>
+                <p>Si tenés diagnóstico o sospecha de afección tiroidea, **no postergues tus controles periódicos**. Mantener regulados los niveles de TSH y hormonas tiroideas es clave para prevenir síntomas como fatiga, cambios de peso inexplicables, alteraciones metabólicas y cardiovasculares.</p>
+                <a href="#reserva" class="alert-cta"><i class="fa-solid fa-arrow-right"></i> Solicitar chequeo y revisión de laboratorio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESPECIALIDADES -->
+    <section class="specialties" id="especialidades">
+        <div class="section-title">
+            <h3>Especialidades y Áreas de Atención</h3>
+            <p>Tratamientos adaptados a las necesidades de cada paciente</p>
+        </div>
+
+        <div class="grid-cards">
+            <!-- Enfermedades Tiroideas -->
+            <div class="card">
+                <div class="card-icon" style="background-color: #fef3c7; color: var(--accent-amber);">
+                    <i class="fa-solid fa-dna"></i>
+                </div>
+                <h4>Enfermedades Tiroideas</h4>
+                <p>Evaluación minuciosa del funcionamiento de la glándula tiroides y ajuste preciso de medicación.</p>
+                <ul class="card-list">
+                    <li><i class="fa-solid fa-check"></i> Hipotiroidismo e Hipertiroidismo</li>
+                    <li><i class="fa-solid fa-check"></i> Tiroiditis de Hashimoto</li>
+                    <li><i class="fa-solid fa-check"></i> Control de Nódulos Tiroideos</li>
+                    <li><i class="fa-solid fa-check"></i> Solicitud e interpretación de Ecografías</li>
+                </ul>
+            </div>
+
+            <!-- Diabetes y Metabolismo -->
+            <div class="card">
+                <div class="card-icon" style="background-color: #e0f2fe; color: var(--primary);">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                </div>
+                <h4>Diabetes y Metabolismo</h4>
+                <p>Abordaje integral para el control de la glucemia y prevención de complicaciones metabólicas.</p>
+                <ul class="card-list">
+                    <li><i class="fa-solid fa-check"></i> Diabetes Tipo 1 y Tipo 2</li>
+                    <li><i class="fa-solid fa-check"></i> Resistencia a la Insulina</li>
+                    <li><i class="fa-solid fa-check"></i> Síndrome Metabólico</li>
+                    <li><i class="fa-solid fa-check"></i> Guía nutricional y del estilo de vida</li>
+                </ul>
+            </div>
+
+            <!-- Clínica Médica General -->
+            <div class="card">
+                <div class="card-icon" style="background-color: #ccfbf1; color: var(--secondary);">
+                    <i class="fa-solid fa-notes-medical"></i>
+                </div>
+                <h4>Clínica Médica General</h4>
+                <p>Diagnóstico preventivo, tratamiento de enfermedades agudas o crónicas y chequeos de rutina.</p>
+                <ul class="card-list">
+                    <li><i class="fa-solid fa-check"></i> Chequeos preventivos integrales</li>
+                    <li><i class="fa-solid fa-check"></i> Hipertensión arterial</li>
+                    <li><i class="fa-solid fa-check"></i> Recetas e indicación de estudios</li>
+                    <li><i class="fa-solid fa-check"></i> Certificados de salud</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PASOS DE RESERVA -->
+    <section class="specialties">
+        <div class="steps-container">
+            <div class="section-title" style="margin-bottom: 2rem;">
+                <h3>¿Cómo reservar tu turno online?</h3>
+                <p>Proceso fácil, rápido y 100% seguro desde tu celular o computadora</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h4>Elegí el Horario</h4>
+                    <p>Seleccioná el día y la hora que te queden más cómodos en el calendario interactivo.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h4>Aboná con Mercado Pago</h4>
+                    <p>Vas a ser redirigido a Mercado Pago para abonar tu consulta con tarjeta o dinero en cuenta.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h4>Recibí el Link de Google Meet</h4>
+                    <p>Al confirmar el pago recibís el enlace a la videollamada para conectarte el día de la cita.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CALENDLY Y RESERVA -->
+    <section class="booking-section" id="reserva">
+        <div class="booking-box">
+            <div class="booking-header">
+                <h3>Reserva de Consulta Médica</h3>
+                <p>Elegí la fecha deseada a continuación. Luego serás redirigido a Mercado Pago para abonar $XX.XXX.</p>
+            </div>
+
+            <!-- EMBED DE CALENDLY (Opción A) -->
+            <!-- Nota: Reemplazar "https://calendly.com/TU-USUARIO/consulta-medica" con la URL real de la Dra. Furlan -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/drafurlan/consulta-medica?hide_landing_page_details=1&hide_gdpr_banner=1" style="min-width:320px;height:800px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- FORMULARIO PACIENTE (Oculto por defecto hasta que se elija fecha en Calendly) -->
+            <div id="contenedorFormulario" style="display: none; max-width: 500px; margin: 30px auto; padding: 25px; border: 1px solid #e0e0e0; border-radius: 10px; background-color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <h3 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">Paso 2: Completá tus Datos</h3>
+                
+                <form id="formPaciente">
+                    <div style="margin-bottom: 15px;">
+                        <label for="nombre" style="display: block; font-weight: bold; margin-bottom: 5px;">Nombre y Apellido:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="edad" style="display: block; font-weight: bold; margin-bottom: 5px;">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="1" max="120" placeholder="Ej: 35" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="dni" style="display: block; font-weight: bold; margin-bottom: 5px;">DNI / Documento:</label>
+                        <input type="text" id="dni" name="dni" placeholder="Ej: 30123456" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label for="celular" style="display: block; font-weight: bold; margin-bottom: 5px;">Número de Celular (WhatsApp):</label>
+                        <input type="tel" id="celular" name="celular" placeholder="Ej: +5491112345678" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                        <small style="color: #666; font-size: 12px;">Incluí el código de país y área (Ej: +54911...)</small>
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="email" style="display: block; font-weight: bold; margin-bottom: 5px;">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+
+                    <button type="submit" class="btn-mp-pay" style="width: 100%; border: none; cursor: pointer;">
+                        <i class="fa-solid fa-credit-card"></i> Confirmar e Ir al Pago con Mercado Pago
+                    </button>
+                </form>
+            </div>
+
+            <!-- SIMULADOR DE FLUJO MERCADO PAGO / BACKEND PYTHON -->
+            <div class="checkout-demo-panel">
+                <div class="mp-badge">
+                    <i class="fa-solid fa-lock"></i> Pago Procesado por Mercado Pago
+                </div>
+                <p style="font-size: 0.9rem; color: var(--gray); margin-bottom: 1rem;">
+                    <em>(Una vez elegido el turno en Calendly, tu servidor Python generará el pago automáticamente)</em>
+                </p>
+                
+                <!-- Botón simulador para probar el flujo de redirección Mercado Pago -->
+                <button class="btn-mp-pay" onclick="simularPagoMercadoPago()">
+                    <i class="fa-solid fa-credit-card"></i> Pagar Consulta con Mercado Pago
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL CONFIRMACIÓN CON LINK GOOGLE MEET -->
+    <div class="modal-overlay" id="modalConfirmation">
+        <div class="modal-card">
+            <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 style="color: var(--dark); margin-bottom: 0.5rem;">¡Turno Confirmado!</h3>
+            <p style="color: var(--gray); font-size: 0.95rem;">Hemos procesado tu pago de manera exitosa en Mercado Pago.</p>
+
+            <div class="meet-box">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+                    <i class="fa-solid fa-video" style="color: #1a73e8;"></i>
+                    <strong>Enlace a tu Videollamada:</strong>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--gray); margin-bottom: 0.5rem;">Guardá este enlace para conectarte el día y hora indicados:</p>
+                <a href="https://meet.google.com/abc-defg-hij" target="_blank" class="meet-link-btn">
+                    <i class="fa-brands fa-google"></i> Unirse a Google Meet
+                </a>
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--gray);">También te enviamos la confirmación con el link a tu correo electrónico.</p>
+            <button class="btn-close-modal" onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo-text" style="margin-bottom: 1rem;">
+                    <h1 style="color: white; font-size: 1.4rem;">Dra. Furlan</h1>
+                    <span style="color: #38bdf8;">Clínica Médica & Endocrinología</span>
+                </div>
+                <p>Atención médica personalizada enfocada en el control metabólico y salud tiroidea. Brindamos videoconsultas para pacientes de todo el país.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <p><a href="#inicio" style="color: #94a3b8; text-decoration: none;">Inicio</a></p>
+                <p><a href="#especialidades" style="color: #94a3b8; text-decoration: none;">Especialidades</a></p>
+                <p><a href="#reserva" style="color: #94a3b8; text-decoration: none;">Reservar Turno</a></p>
+            </div>
+            <div class="footer-col">
+                <h4>Atención</h4>
+                <p><i class="fa-regular fa-clock"></i> Lunes a Viernes</p>
+                <p><i class="fa-solid fa-video"></i> Consultas 100% Online</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Dra. Furlan - Todos los derechos reservados. Página web desarrollada para consultorio médico online.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DE PRUEBA / INTEGRACIÓN -->
+    <script>
+        // Función simuladora del flujo Mercado Pago -> Retorno -> Confirmación
+        async function simularPagoMercadoPago() {
+    try {
+        const response = await fetch('/crear_preferencia', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        const data = await response.json();
+
+        if (data.init_point) {
+            // Redirige al pasaje de pago de Mercado Pago
+            window.location.href = data.init_point;
+        } else {
+            alert("Error al iniciar el pago con Mercado Pago.");
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        alert("Ocurrió un error al conectar con el servidor.");
+    }
+}
+
+    </script>
+    <script src="main.js">
+
+    function cerrarModal() {
+            document.getElementById('modalConfirmation').style.display = 'none';
+        }
+
+        // --- PEGAR AQUÍ ABAJO DE CERRAR MODAL ---
+        
+        // 1. Escuchar la selección de turno en Calendly
+        window.addEventListener('message', function(e) {
+            if (e.data.event && e.data.event === 'calendly.event_scheduled') {
+                console.log('¡Turno agendado en Calendly!');
+                const contenedor = document.getElementById('contenedorFormulario');
+                contenedor.style.display = 'block';
+                contenedor.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+
+        // 2. Procesar el formulario de paciente e iniciar el pago
+        document.getElementById('formPaciente').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const datosPaciente = {
+                nombre: document.getElementById('nombre').value,
+                edad: document.getElementById('edad').value,
+                dni: document.getElementById('dni').value,
+                celular: document.getElementById('celular').value,
+                email: document.getElementById('email').value
+            };
+
+            try {
+                // Guardar los datos en Python
+                const response = await fetch('/guardar-paciente', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(datosPaciente)
+                });
+
+                const resultado = await response.json();
+
+                if (resultado.success) {
+                    // Una vez guardados los datos, invocamos el pago de Mercado Pago
+                    simularPagoMercadoPago();
+                } else {
+                    alert('Ocurrió un error al registrar tus datos.');
+                }
+            } catch (error) {
+                console.error('Error de conexión:', error);
+                alert('Ocurrió un error al conectar con el servidor.');
+            }
+        });
+    </script>
+</body>
+</html>

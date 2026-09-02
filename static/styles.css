@@ -1,0 +1,694 @@
+ :root {
+            --primary: #0284c7;        /* Azul médico refinado */
+            --primary-dark: #0369a1;
+            --primary-light: #e0f2fe;
+            --secondary: #0d9488;      /* Verde agua / Teal */
+            --accent-amber: #d97706;   /* Alerta médica */
+            --amber-bg: #fffbe3;
+            --dark: #0f172a;           /* Texto oscuro */
+            --gray: #64748b;
+            --light: #f8fafc;
+            --white: #ffffff;
+            --shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+            --radius: 16px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f1f5f9;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .logo-text h1 {
+            font-size: 1.3rem;
+            color: var(--dark);
+            font-weight: 700;
+        }
+
+        .logo-text span {
+            font-size: 0.75rem;
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: block;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .btn-reserve {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white !important;
+            padding: 0.6rem 1.4rem;
+            border-radius: 50px;
+            font-weight: 600 !important;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+            transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+        }
+
+        .btn-reserve:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(2, 132, 199, 0.35);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+            color: var(--dark);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--gray);
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-img-container {
+            position: relative;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 4px solid var(--white);
+        }
+
+        .experience-card {
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            background: white;
+            padding: 1.2rem;
+            border-radius: 14px;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .experience-card i {
+            font-size: 2rem;
+            color: var(--secondary);
+        }
+
+        /* ALERT BANNER SECTION (HIPOTIROIDISMO / HIPERTIROIDISMO) */
+        .alert-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .alert-box {
+            background-color: var(--amber-bg);
+            border: 2px dashed #f59e0b;
+            border-radius: var(--radius);
+            padding: 2rem;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .alert-icon {
+            background-color: #fef3c7;
+            color: var(--accent-amber);
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            flex-shrink: 0;
+        }
+
+        .alert-content h3 {
+            color: #92400e;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .alert-content p {
+            color: #78350f;
+            font-size: 0.98rem;
+            margin-bottom: 1rem;
+        }
+
+        .alert-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #92400e;
+            font-weight: 700;
+            text-decoration: underline;
+            font-size: 0.95rem;
+        }
+
+        /* ESPECIALIDADES SECTION */
+        .specialties {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h3 {
+            font-size: 2.2rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            font-size: 1rem;
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: var(--radius);
+            padding: 2.2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card h4 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: var(--dark);
+        }
+
+        .card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .card-list {
+            list-style: none;
+        }
+
+        .card-list li {
+            font-size: 0.9rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-list li i {
+            color: var(--secondary);
+            font-size: 0.8rem;
+        }
+
+        /* PASOS DE RESERVA & PAGO */
+        .steps-container {
+            background: white;
+            border-radius: var(--radius);
+            padding: 2.5rem;
+            margin: 3rem auto;
+            max-width: 1200px;
+            box-shadow: var(--shadow);
+            border: 1px solid #e2e8f0;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .step-item h4 {
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .step-item p {
+            font-size: 0.88rem;
+            color: var(--gray);
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin: 0 auto;
+        }
+
+        /* CALENDLY & RESERVA SECTION */
+        .booking-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            scroll-margin-top: 100px;
+        }
+
+        .booking-box {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .booking-header {
+            background: linear-gradient(135deg, var(--dark), #1e293b);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .booking-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .booking-header p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        /* Placeholder or Live Calendly Embed */
+        .calendly-embed-container {
+            min-height: 650px;
+            width: 100%;
+        }
+
+        /* SIMULADOR DE PAGO MERCADO PAGO Y GOOGLE MEET */
+        .checkout-demo-panel {
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .mp-badge {
+            background-color: #009ee3;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .btn-mp-pay {
+            background-color: #009ee3;
+            color: white;
+            border: none;
+            padding: 0.9rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 12px rgba(0, 158, 227, 0.3);
+        }
+
+        /* ==========================================
+        ANIMACIÓN Y ESTILOS DEL SPINNER DE CARGA
+        ========================================== */
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #ffffff;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+        .btn-mp-pay:hover {
+            background-color: #0081b8;
+        }
+
+        /* MODAL DE CONFIRMACIÓN DE TURNO Y GOOGLE MEET */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(5px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            padding: 1rem;
+        }
+
+        .modal-card {
+            background: white;
+            border-radius: var(--radius);
+            max-width: 500px;
+            width: 100%;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            animation: modalFadeIn 0.3s ease-out forwards;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .success-icon {
+            width: 70px;
+            height: 70px;
+            background-color: #dcfce7;
+            color: #16a34a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            margin: 0 auto 1.5rem;
+        }
+
+        .meet-box {
+            background-color: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            border-radius: 12px;
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+
+        .meet-link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #1a73e8;
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 0.8rem;
+        }
+
+        .btn-close-modal {
+            background: transparent;
+            border: 1px solid #cbd5e1;
+            padding: 0.6rem 1.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--gray);
+            margin-top: 1rem;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--dark);
+            color: #94a3b8;
+            padding: 4rem 2rem 2rem;
+            margin-top: 5rem;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid #334155;
+        }
+
+        .footer-col h4 {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .footer-col p {
+            font-size: 0.95rem;
+        }
+
+        .copyright {
+            text-align: center;
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            font-size: 0.85rem;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-img {
+                height: 350px;
+            }
+            .experience-card {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            nav ul {
+                display: none; /* Ideal agregar menú hamburguesa luego */
+            }
+        }
+
+/* ==========================================
+   ESTILOS PÁGINAS DE RETORNO CHECKOUT (MP)
+   ========================================== */
+.status-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--light, #f8fafc);
+}
+
+.status-card {
+    background: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    padding: 2.5rem;
+    border-radius: var(--radius, 16px);
+    box-shadow: var(--shadow, 0 18px 25px -5px rgba(2, 132, 199, 0.08));
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.status-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+/* Colores según estado */
+.status-card.success .status-icon { color: #10b981; }
+.status-card.pending .status-icon { color: #f59e0b; }
+.status-card.error .status-icon   { color: #ef4444; }
+
+.status-card h2 {
+    color: var(--dark, #0f172a);
+    margin-bottom: 0.5rem;
+}
+
+.status-msg {
+    color: var(--gray, #64748b);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.status-details {
+    background: #f1f5f9;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 0.9rem;
+    color: var(--dark, #0f172a);
+    margin-bottom: 2rem;
+}
+
+.status-details ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+}
+
+.btn-status {
+    display: inline-block;
+    background-color: var(--primary, #0284c7);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.btn-status:hover {
+    opacity: 0.9;
+}

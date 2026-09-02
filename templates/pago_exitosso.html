@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago Confirmado - Dra. Furlan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="status-container">
+        <div class="status-card success">
+            <div class="status-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>¡Pago Realizado con Éxito!</h2>
+            <p class="status-msg">Tu turno para la consulta médica ha sido registrado correctamente.</p>
+            
+            <div class="status-details">
+                <p><strong><i class="fas fa-info-circle"></i> Siguientes pasos:</strong></p>
+                <ul>
+                    <li>Te enviamos una confirmación por WhatsApp con los datos del turno.</li>
+                    <li>Si la consulta es virtual, recibirás el enlace de Google Meet por esa misma vía.</li>
+                </ul>
+            </div>
+
+            <a href="/" class="btn-status">Volver al Inicio</a>
+        </div>
+    </div>
+</body>
+</html>
